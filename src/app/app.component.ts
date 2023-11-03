@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'git';
+  name="hello world";
+  hello="component"
+receive(event:any){
+this.hello=event;
+}
 }
