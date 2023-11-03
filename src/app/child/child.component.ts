@@ -7,7 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class ChildComponent {
   @Input() child:string="welcome all";
-  @Output() parent=new EventEmitter;
+  @Output() parent=new EventEmitter();
   name="child msg";
   send(){
     this.parent.emit(this.name);
